@@ -1,0 +1,171 @@
+App {
+  margin: 0
+}
+
+body, html {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  flex: 1;
+  margin-top: 80px;
+}
+
+
+header {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin: 15px;
+}
+
+.nav-fulltext {
+  display: none;
+}
+
+.nav-abbrtext {
+  display: none;
+}
+
+@media (min-width: 801px) {
+  .nav-fulltext {
+    display: inline;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-abbrtext {
+    display: inline;
+  }
+}
+
+footer {
+  height: 50px;
+  width: 100vw;
+  background-color: #999999;
+}
+
+#pls {
+  text-align: center;
+  color: red;
+  font-size: 2em;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 130px);
+  text-align: center;
+}
+
+.games-won {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjusts the space between text and button */
+}
+
+#blanko {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 5px; /* Adjust padding as necessary */
+  border: 1px solid #ddd; /* Optional border for the input */
+  text-align: center;
+  font-size: 16px; /* Adjust font size as necessary */
+  box-sizing: border-box;
+}
+
+.square-input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
+
+#button, #tetro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 130px);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  margin: 0;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shrek {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 130px);
+}
+
+#shrekbuttons {
+  display:flex;
+  flex-direction: row;
+}
+
+.grid-containerr {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(12, calc((100vh - 140px) / 12));
+  gap: 1px;
+  margin: 20px 20px 100px 20px;
+}
+
+.celll {
+  border: 1px solid #333333;
+  background-color: transparent;
+}
+
+.locked-celll {
+  background-color: teal;
+}
+
+.filled-row {
+  background-color: rgb(0, 255, 0);
+}

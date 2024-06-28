@@ -1,0 +1,26 @@
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  font-size: 50px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 8px #999;
+  border-radius: 1rem;
+}
+
+.X {
+  width: 260px;
+  color: lightseagreen;
+}
+
+.O {
+  width: 260px;
+  color: turquoise;
+}
+
+.tie {
+  width: 200px;
+  color: gray;
+}
